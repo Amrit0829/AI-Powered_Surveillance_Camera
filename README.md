@@ -1,26 +1,61 @@
-<<<<<<< HEAD
-# Air-Canvas-with-ML
-Computer vision project implemented with OpenCV with Machine learning using the Mediapipe
+AI-Powered Surveillance Camera
+This project is an AI-driven surveillance system capable of recognizing faces in real time. It uses deep learning-based facial recognition techniques and is designed for applications in security, monitoring, and automation.
 
-Ever wanted to draw your imagination by just waiving your finger in air. In this post we will learn to build an Air Canvas which can draw anything on it by just motion of our hands and noticing the landmark on the hand knuckels. A very beautiful project for resume of machine learning people.
-We will be using the computer vision techniques of OpenCV to build this project. The preffered language is python due to its exhaustive libraries and easy to use syntax but understanding the basics it can be implemented in any OpenCV supported language.
+Features
+Real-Time Face Recognition: Identifies and verifies individuals using AI algorithms.
+MobileNet Model: Utilizes a pre-trained MobileNet model for efficient performance.
+Scalable Design: Easily adaptable for multiple environments like offices, homes, or public spaces.
+Image Storage: Stores captured images for future reference or logs.
+Project Structure
+graphql
+Copy code
+AI-Powered_Surveillance_Camera/  
+│  
+├── images/                     # Folder to store images for testing  
+│   ├── img.jpg  
+│   ├── joe.jpeg  
+│  
+├── facerecog.py                # Main Python script for face recognition  
+├── mobilenet_iter_73000.caffemodel  # Pre-trained MobileNet model  
+├── README.md                   # Documentation for the project  
+Requirements
+Python 3.x
+OpenCV
+NumPy
+dlib
+TensorFlow/Keras (if needed for advanced features)
+Installation
+Clone this repository:
 
-Here Hand landmarks detection and tracking is used in order to achieve the objective. <br><br>
-<b>The youtube video link with full explanation: </b> https://www.youtube.com/watch?v=T7sjrWc4QEc
+bash
+Copy code
+git clone https://github.com/your-username/AI-Powered_Surveillance_Camera.git  
+cd AI-Powered_Surveillance_Camera  
+Install the required Python packages:
 
+bash
+Copy code
+pip install -r requirements.txt  
+Place the images for recognition in the images folder.
 
-# Algorithm
+Usage
+Run the script:
 
-1. Start reading the frames and convert the captured frames to HSV colour space.(Easy for colour detection)
-2. Prepare the canvas frame and put the respective ink buttons on it.
-3. Adjust the values of teh mediapipe intilization to detect one hand only.
-4. Detect teh landmarks by passing the RGB frame to the mediapipe hand detector
-5. Detect the landmarks, find the forefinger coordinates and keep storing them in the array for successive frames .(Arrays for drawing points on canvas)
-6. Finally draw the points stored in array on the frames and canvas .
+bash
+Copy code
+python facerecog.py  
+The system will access your webcam or connected camera to perform real-time face recognition.
 
-Requirements: python3 , numpy , opencv, mediapipe installed on your system.
+Captured frames and recognition logs will be stored locally.
 
-<img src="https://raw.githubusercontent.com/infoaryan/Air-Canvas-with-ML/master/Screenshot%20from%202022-06-16%2019-57-44.png" width="950" height="400">
-=======
-# AI-Powered_Surveillance_Camera
->>>>>>> 88b2385dfe8833b815be86fa65c53423af17dc01
+Future Improvements
+Integration with IoT devices for remote access.
+Adding multiple face recognition support.
+Enhancing accuracy with more advanced models like FaceNet or DeepFace.
+Contributing
+Contributions are welcome! Feel free to open issues or submit pull requests to improve this project.
+
+License
+This project is licensed under the MIT License.
+
+Let me know if you want to customize any section further!
