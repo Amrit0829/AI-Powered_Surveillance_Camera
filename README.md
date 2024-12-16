@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Air-Canvas-with-ML
 Computer vision project implemented with OpenCV with Machine learning using the Mediapipe
 
@@ -20,3 +21,6 @@ Here Hand landmarks detection and tracking is used in order to achieve the objec
 Requirements: python3 , numpy , opencv, mediapipe installed on your system.
 
 <img src="https://raw.githubusercontent.com/infoaryan/Air-Canvas-with-ML/master/Screenshot%20from%202022-06-16%2019-57-44.png" width="950" height="400">
+=======
+# AI-Powered_Surveillance_Camera
+>>>>>>> 88b2385dfe8833b815be86fa65c53423af17dc01
