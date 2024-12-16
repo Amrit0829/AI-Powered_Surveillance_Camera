@@ -1,4 +1,7 @@
 cmake
 opencv-python
 numpy
-dlib
+dlib==19.24.6
+pyttsx3
+face_recognition
+git+https://github.com/ageitgey/face_recognition_models.git
